@@ -1,0 +1,181 @@
+{
+  "data_hash": "1031431994684566115",
+  "generated_at": "2026-10-08 04:25 UTC",
+  "materials": [
+    "AG98",
+    "AG22",
+    "AG23",
+    "SodaF",
+    "PotashF",
+    "Crushing",
+    "ETP",
+    "NaSil"
+  ],
+  "bounds": {
+    "AG98": [
+      13.772,
+      22.693
+    ],
+    "AG22": [
+      0.1,
+      7.252
+    ],
+    "AG23": [
+      7.84,
+      17.44
+    ],
+    "SodaF": [
+      36.649,
+      46.221
+    ],
+    "PotashF": [
+      14.353,
+      22.93
+    ],
+    "Crushing": [
+      0.1,
+      5.86
+    ],
+    "ETP": [
+      0.1,
+      5.93
+    ],
+    "NaSil": [
+      0.1,
+      4.348
+    ]
+  },
+  "bounds_margin": 0.0,
+  "cost_tk_per_kg": {
+    "AG98": 6.95,
+    "AG22": 8.37,
+    "AG23": 7.024,
+    "SodaF": 8.887,
+    "PotashF": 6.241,
+    "Crushing": 0.0,
+    "ETP": 0.0,
+    "NaSil": 23.369
+  },
+  "co2_kg_per_kg": {
+    "AG98": 0.129,
+    "AG22": 0.129,
+    "AG23": 0.129,
+    "SodaF": 0.053,
+    "PotashF": 0.0286,
+    "Crushing": 0.587,
+    "ETP": 0.242,
+    "NaSil": 0.433
+  },
+  "feature_cols": [
+    "AG98_wtpct",
+    "AG22_wtpct",
+    "AG23_wtpct",
+    "SodaF_wtpct",
+    "PotashF_wtpct",
+    "Crushing_wtpct",
+    "ETP_wtpct",
+    "NaSil_wtpct"
+  ],
+  "comp_cols": [
+    "AG98_wtpct",
+    "AG22_wtpct",
+    "AG23_wtpct",
+    "SodaF_wtpct",
+    "PotashF_wtpct",
+    "Crushing_wtpct",
+    "ETP_wtpct",
+    "NaSil_wtpct"
+  ],
+  "target_cols": [
+    "MOR_MPa",
+    "WA_pct",
+    "Shrinkage_pct"
+  ],
+  "modelled_targets": [
+    "MOR_MPa",
+    "WA_pct",
+    "Shrinkage_pct"
+  ],
+  "constant_targets": {},
+  "n_experimental": 238,
+  "n_synthetic": 0,
+  "synthetic_data_used": false,
+  "architecture_per_target": {
+    "MOR_MPa": "LinearRegression",
+    "WA_pct": "LinearRegression",
+    "Shrinkage_pct": "LinearRegression"
+  },
+  "prediction_interval_level": 0.9,
+  "prediction_halfwidth": {
+    "MOR_MPa": 5.904416064160538,
+    "WA_pct": 0.2232632420651591,
+    "Shrinkage_pct": 0.3572446631776616
+  },
+  "held_out_test_metrics": [
+    {
+      "target": "MOR_MPa",
+      "model": "LinearRegression",
+      "r2": 0.9486029943260981,
+      "mae": 2.5761113841830547,
+      "rmse": 3.3228516098157854,
+      "mape_pct": 5.143386890347692
+    },
+    {
+      "target": "WA_pct",
+      "model": "LinearRegression",
+      "r2": 0.5844930807765514,
+      "mae": 0.1206249791596478,
+      "rmse": 0.15169746245178506,
+      "mape_pct": 40.93147089435625
+    },
+    {
+      "target": "Shrinkage_pct",
+      "model": "LinearRegression",
+      "r2": 0.916815211527876,
+      "mae": 0.1474296335815759,
+      "rmse": 0.18054671059613933,
+      "mape_pct": 1.392359405053483
+    }
+  ],
+  "iso13006_bia": {
+    "wa_max_pct": 0.5,
+    "mor_min_mpa": 35.0
+  },
+  "data_audit": {
+    "n_batches": 238,
+    "total_mass": {
+      "mean": 100.13748739495799,
+      "sd": 4.693495101496639,
+      "min": 87.669,
+      "max": 112.97699999999999,
+      "n_deviating_gt_0p5": 219
+    },
+    "raw_parts_max_abs_pairwise_r": 0.16250313415229178,
+    "renormalised_parts_mean_pairwise_r": -0.13463516390139776,
+    "cond_number_asweighed": 1.3843431637188899,
+    "cond_number_renormalised_plus_dev": 619765690995385.2,
+    "corr_total_mass_with_targets": {
+      "MOR_MPa": 0.014421798086119859,
+      "WA_pct": 0.09918143499725343,
+      "Shrinkage_pct": 0.35669971515452686
+    },
+    "wa": {
+      "floor": 0.033,
+      "fraction_at_floor": 0.004201680672268907,
+      "n_above_iso_bia_limit": 116,
+      "n_negative_clipped": 0,
+      "censored": false
+    },
+    "mor": {
+      "min": 20.502763155,
+      "max": 94.58513924999998,
+      "fraction_ge_iso_bia_min": 0.8865546218487395
+    },
+    "constant_targets": {}
+  },
+  "wa_tobit": null,
+  "wa_exceedance": {
+    "model": "gaussian_residual",
+    "sigma": 0.1299811491656596
+  }
+}

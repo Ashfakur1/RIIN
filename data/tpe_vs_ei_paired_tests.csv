@@ -1,0 +1,3 @@
+comparison,n_pairs,n_pairs_TPE_better,median_diff,wilcoxon_p
+TPE < GP_EI,25,22,-0.3216291712290388,5.662441253662109e-07
+TPE < Random,25,23,-0.29547197398244274,2.980232238769531e-07

@@ -1,0 +1,25 @@
+target,feature,mean_abs_shap,label
+MOR_MPa,AG98_wtpct,2.237869554537771,AG98
+MOR_MPa,AG22_wtpct,1.5911370289002427,AG22
+MOR_MPa,AG23_wtpct,2.305812770132813,AG23
+MOR_MPa,SodaF_wtpct,2.0309386500744693,Soda Feldspar
+MOR_MPa,PotashF_wtpct,1.8844746676286577,Potash Feldspar
+MOR_MPa,Crushing_wtpct,1.6623884593633302,Crushed Fired Tile
+MOR_MPa,ETP_wtpct,1.3588979633387157,ETP Sludge
+MOR_MPa,NaSil_wtpct,11.325938585705998,Na-Silicate
+WA_pct,AG98_wtpct,0.058169377168730226,AG98
+WA_pct,AG22_wtpct,0.03861003559138916,AG22
+WA_pct,AG23_wtpct,0.06370497097822818,AG23
+WA_pct,SodaF_wtpct,0.0053076660052434905,Soda Feldspar
+WA_pct,PotashF_wtpct,0.012135992494223306,Potash Feldspar
+WA_pct,Crushing_wtpct,0.06685507572069511,Crushed Fired Tile
+WA_pct,ETP_wtpct,0.04314415195016916,ETP Sludge
+WA_pct,NaSil_wtpct,0.06973325535115005,Na-Silicate
+Shrinkage_pct,AG98_wtpct,0.19117122077972648,AG98
+Shrinkage_pct,AG22_wtpct,0.12279522718865436,AG22
+Shrinkage_pct,AG23_wtpct,0.19471344459994921,AG23
+Shrinkage_pct,SodaF_wtpct,0.044674213466060625,Soda Feldspar
+Shrinkage_pct,PotashF_wtpct,0.031737539508099814,Potash Feldspar
+Shrinkage_pct,Crushing_wtpct,0.2230967448630407,Crushed Fired Tile
+Shrinkage_pct,ETP_wtpct,0.19562606312100442,ETP Sludge
+Shrinkage_pct,NaSil_wtpct,0.14331026003009856,Na-Silicate

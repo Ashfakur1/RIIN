@@ -1,0 +1,27 @@
+# Pinned versions for the 238-batch real-data pipeline.
+#
+# Install:  pip install -r requirements.txt
+#
+# xgboost, lightgbm and catboost are REQUIRED: train_forward_model.py compares
+# six candidate models and silently drops any that fail to import, which would
+# change the model-comparison table.
+#
+# torch is required ONLY by the 'samplers' analysis in run_analyses.py (Optuna's GPSampler = GP +
+# Expected Improvement). Without it that script still runs TPE + Random and says
+# the GP comparison was skipped. CPU build is sufficient:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+matplotlib==3.10.8
+seaborn==0.13.2
+joblib==1.5.3
+optuna==5.0.0
+streamlit==1.64.0
+xgboost==3.4.1
+lightgbm==4.7.0
+catboost==1.2.10
+shap==0.48.0
+# torch   # optional, see above

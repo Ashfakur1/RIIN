@@ -1,0 +1,4 @@
+target,model,note
+MOR_MPa,LinearRegression,no hyperparameters (OLS)
+WA_pct,LinearRegression,no hyperparameters (OLS)
+Shrinkage_pct,LinearRegression,no hyperparameters (OLS)
